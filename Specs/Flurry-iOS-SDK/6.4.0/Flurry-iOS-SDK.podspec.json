@@ -1,6 +1,15 @@
 {
   "name": "Flurry-iOS-SDK",
   "version": "6.4.0",
+  "license": {
+    "type": "Commercial",
+    "text": ""
+  },
+  "authors": {
+    "Flurry": "http://www.flurry.com"
+  },
+  "homepage": "http://www.flurry.com",
+  "summary": "Flurry iOS SDK",
   "source": {
     "git": "https://github.com/ghugues/Flurry-iOS-SDK.git",
     "tag": "6.4.0"
