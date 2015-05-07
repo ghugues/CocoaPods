@@ -18,10 +18,10 @@
     "ios": "6.0"
   },
   "requires_arc": false,
-  "default_subspecs": "Core",
+  "default_subspecs": "Analytics",
   "subspecs": [
     {
-      "name": "Core",
+      "name": "Analytics",
       "source_files": "Flurry/*.h",
       "frameworks": [
         "Foundation",
@@ -46,7 +46,7 @@
       "libraries": "z",
       "vendored_libraries": "FlurryAds/libFlurryAds_6.4.0.a",
       "dependencies": {
-        "Flurry-iOS-SDK/Core": [
+        "Flurry-iOS-SDK/Analytics": [
         ]
       }
     }
