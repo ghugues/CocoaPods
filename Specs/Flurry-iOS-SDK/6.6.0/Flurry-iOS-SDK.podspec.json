@@ -1,0 +1,54 @@
+{
+  "name": "Flurry-iOS-SDK",
+  "version": "6.6.0",
+  "license": {
+    "type": "Commercial",
+    "text": ""
+  },
+  "authors": {
+    "Flurry": "http://www.flurry.com"
+  },
+  "homepage": "http://www.flurry.com",
+  "summary": "Flurry iOS SDK",
+  "source": {
+    "git": "https://github.com/ghugues/Flurry-iOS-SDK.git",
+    "tag": "6.6.0"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": false,
+  "default_subspecs": "Analytics",
+  "subspecs": [
+    {
+      "name": "Analytics",
+      "source_files": "Flurry/*.h",
+      "frameworks": [
+        "Foundation",
+        "CoreGraphics",
+        "UIKit",
+        "Security",
+        "SystemConfiguration"
+      ],
+      "vendored_libraries": "Flurry/libFlurry_6.6.0.a"
+    },
+    {
+      "name": "Ads",
+      "source_files": "FlurryAds/**/*.h",
+      "frameworks": [
+        "Foundation",
+        "CoreGraphics",
+        "UIKit",
+        "MediaPlayer",
+        "AdSupport",
+        "StoreKit"
+      ],
+      "libraries": "z",
+      "vendored_libraries": "FlurryAds/libFlurryAds_6.6.0.a",
+      "dependencies": {
+        "Flurry-iOS-SDK/Analytics": [
+        ]
+      }
+    }
+  ]
+}
